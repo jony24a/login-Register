@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            <!-- Formulario para agregar turistas -->
+            <h1 class="crud_title">Lista de turistas</h1>
+            <form id="formRegister" class="crud_form">
+                <!-- Inputs para datos del turista -->
+                <input type="text" placeholder="Name" id="nameInput" class="form_input">
+                <input type="text" placeholder="Apellido" id="apellidoInput" class="form_input">
+                <input type="email" placeholder="Email" id="emailInput" class="form_input">
+                <input type="number" placeholder="Teléfono" id="telefonoInput" class="form_input">
+                <input type="text" placeholder="Dirección" id="direccionInput" class="form_input">
+                <input type="text" placeholder="Ciudad" id="ciudadInput" class="form_input">
+                <!-- Botón para agregar -->
+                <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
+            </form>
+            
+            <!-- Tabla para mostrar turistas registrados -->
+            <table class="crud__table">
+                <thead>
+                    <tr>
+                        <th class="table__header">Nombre</th>
+                        <th class="table__header">Apellido</th>
+                        <th class="table__header">Email</th>
+                        <th class="table__header">Teléfono</th>
+                        <th class="table__header">Dirección</th>
+                        <th class="table__header">Ciudad</th>
+                        <th class="table__header">Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table__body">
+                    <!-- Aquí se añadirán filas con datos de turistas -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/crud/code.js"></script>
+</body>
+</html>
